@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:25
+-keep class com.google.ads.AdActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:6
+-keep class com.google.ads.AdView { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.sunix.game.paperplane.GameAct { <init>(...); }
+

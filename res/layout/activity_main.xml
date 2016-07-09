@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15383456c9718b"
+        ads:loadAdOnCreate="true" />
+
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/next_task"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="NEXT TASK: 20"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pass_time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="PASS TIME:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_view"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/meun_view"
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:layout_centerInParent="true"
+        android:background="#99009999"
+        android:padding="25dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/gameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="GAME OVER"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/gameover"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/score_race"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dip"
+                    android:text="Score Race"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/score_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/score_race"
+                    android:layout_marginTop="10dip"
+                    android:text="Score:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/score_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dip"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/best_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/score_text"
+                    android:layout_marginTop="10dip"
+                    android:text="Best:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/best_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/best_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dip"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/time_race"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dip"
+                    android:text="Time Race"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <ListView
+                    android:id="@+id/pass_time_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/time_race"
+                    android:layout_marginTop="10dip" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

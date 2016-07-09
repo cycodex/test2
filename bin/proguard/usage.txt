@@ -1,0 +1,91 @@
+com.sunix.game.paperplane.BmpManage:
+    public static final int STYLE_TUBE_LEFT_LONG
+    public static final int STYLE_TUBE_RIGHT_LONG
+    public static final int STYLE_TUBE_LEFT_SHORT
+    public static final int STYLE_TUBE_RIGHT_SHORT
+com.sunix.game.paperplane.BuildConfig
+com.sunix.game.paperplane.DrawUtils:
+    public static int sStatusHeight
+    public static int sMiddleViewOffsetX
+    14:14:public DrawUtils()
+    45:45:public static int dip2px(float)
+    56:57:public static int px2dip(float)
+    68:69:public static int sp2px(float)
+    78:80:public static void setScreenViewSize(int,int)
+    88:90:public static void setMiddleViewSize(int,int)
+    93:93:public static int getMiddleViewWidth()
+    97:97:public static int getMiddleViewHeight()
+    108:109:public static int px2sp(float)
+    118:118:public static int percentX2px(float)
+    127:127:public static int percentY2px(float)
+    136:139:public static int switchByX(int)
+    148:151:public static int switchByY(int)
+    235:235:public static int getScreenViewWidth()
+    239:239:public static int getScreenViewHeight()
+    243:243:public static boolean isPort()
+    255:256:public static float easeOut(float,float,float)
+com.sunix.game.paperplane.FlySprite:
+    36:36:public float getTop()
+com.sunix.game.paperplane.GameControler:
+    private static final java.lang.String SP_NAME
+    private static final java.lang.String KEY_SCORE
+    private static final java.lang.String KEY_PASS
+    public static final int MSG_GAME_STOP
+    public static final int MSG_GAME_START
+    public static final int MSG_UPDATA_TASK
+    170:170:public long getUserTime()
+com.sunix.game.paperplane.GameView:
+    public long mUsedTime
+com.sunix.game.paperplane.MediaManage:
+    private static final int SOUND_ID_CLICK
+    private static final int SOUND_ID_DEAL
+    private static final int SOUND_ID_PASS
+    private static final int SOUND_ID_LEVELUP
+    41:41:public static com.sunix.game.paperplane.MediaManage getInstance()
+com.sunix.game.paperplane.R
+com.sunix.game.paperplane.R$attr
+com.sunix.game.paperplane.R$dimen
+com.sunix.game.paperplane.R$drawable
+com.sunix.game.paperplane.R$id
+com.sunix.game.paperplane.R$layout
+com.sunix.game.paperplane.R$menu
+com.sunix.game.paperplane.R$raw
+com.sunix.game.paperplane.R$string
+com.sunix.game.paperplane.R$style
+com.sunix.game.paperplane.SpeedControler:
+    public static final int FLY_ANGLE_LEFT3
+    public static final int FLY_ANGLE_LEFT2
+    public static final int FLY_ANGLE_LEFT1
+    public static final int FLY_ANGLE_MID
+    public static final int FLY_ANGLE_RIGHT1
+    public static final int FLY_ANGLE_RIGHT2
+    public static final int FLY_ANGLE_RIGHT3
+    public static final float FLY_SPEED_LEFT3
+    public static final float FLY_SPEED_LEFT2
+    public static final float FLY_SPEED_LEFT1
+    public static final float FLY_SPEED_MID
+    public static final float FLY_SPEED_RIGHT1
+    public static final float FLY_SPEED_RIGHT2
+    public static final float FLY_SPEED_RIGHT3
+    public static final float FALL_SPEED_LEVEL2
+    public static final float FALL_SPEED_LEVEL3
+    public static final float FALL_SPEED_LEVEL4
+    3:3:public SpeedControler()
+    78:78:public static float getFallSpeed()
+com.sunix.game.paperplane.Sprite$SPoint:
+    62:64:public void set(float,float)
+com.sunix.game.paperplane.Sprite$SSize:
+    47:49:public void set(float,float)
+com.sunix.game.paperplane.TubeGap:
+    public static final float PADDING
+    public static final int STYLE_RAMDOM
+    public static final int STYLE_LEFT_LONG
+    public static final int STYLE_RIGHT_LONG
+    public static final int STYLE_BOTH_SHORT
+    45:45:public float getHeight()
+com.sunix.game.paperplane.UtilTool
+com.sunix.game.paperplane.WallGap:
+    public static final int STYLE_RAMDOM
+    public static final int STYLE_LEFT_LONG
+    public static final int STYLE_RIGHT_LONG
+    public static final int STYLE_BOTH_SHORT
